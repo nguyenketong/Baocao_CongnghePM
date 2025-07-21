@@ -1,0 +1,53 @@
+.project-block {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
+  
+  .bg-lightgreen {
+    background-color: rgba(0, 255, 0, 0.15);
+  }
+  
+  .avatar-list {
+    display: flex;
+  }
+  
+  .avatar-list-stacked .avatar {
+    margin-right: -10px;
+  }
+  
+  .avatar {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+  }
+  
+  .dividers-block {
+    border-top: 1px solid #e1e1e1;
+    margin: 1rem 0;
+  }
+  
+  .progress {
+    background-color: #e9ecef;
+  }
+  
+  .light-danger-bg {
+    background-color: rgba(255, 0, 0, 0.15);
+  }
+  
+  .small {
+    font-size: 0.875rem;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .sm {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }

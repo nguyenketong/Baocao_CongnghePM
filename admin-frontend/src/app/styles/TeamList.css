@@ -1,0 +1,77 @@
+.search-container {
+    position: relative;
+    width: 300px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #6b7280;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .search-input:focus {
+    border-color: #2D336B;
+  }
+  
+  .loading-state,
+  .error-state,
+  .empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+  }
+  
+  .error-state {
+    color: #ef4444;
+  }
+  
+  .fab-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #2D336B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .fab-button:hover {
+    transform: scale(1.1);
+    background-color: #1a1f4d;
+  }
+  
+  .modal-overlay {
+    z-index: 50;
+  }
+  
+  .close-button {
+    background-color: #4b5563;
+  }
+  
+  .close-button:hover {
+    background-color: #374151;
+  }
+  
+  .teams-grid {
+    min-height: 200px;
+  }
