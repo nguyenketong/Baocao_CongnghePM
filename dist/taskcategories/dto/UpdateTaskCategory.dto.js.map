@@ -1,0 +1,1 @@
+{"version":3,"file":"UpdateTaskCategory.dto.js","sourceRoot":"","sources":["../../../src/taskcategories/dto/UpdateTaskCategory.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,qDAAkE;AAElE,MAAa,qBAAqB;CAKjC;AALD,sDAKC;AADC;IAHC,IAAA,4BAAU,GAAE;IACZ,IAAA,0BAAQ,EAAC,EAAE,OAAO,EAAE,qCAAqC,EAAE,CAAC;IAC5D,IAAA,2BAAS,EAAC,GAAG,EAAE,EAAE,OAAO,EAAE,gDAAgD,EAAE,CAAC;;+DACpD"}
