@@ -158,20 +158,30 @@ const CreateProgressItem: React.FC<CreateProgressItemProps> = ({ projectId, onCl
 
         <div>
           <label className="block text-sm font-medium text-gray-700">Độ Ưu Tiên</label>
+          <input 
+            type="hidden" 
+            value={priorityContext.getLabel()} 
+            {...register('priority', { required: true })}
+            />
           <select onChange={handlePriorityChange} className="w-full border p-2 rounded-md">
-            <option value="high">Cao</option>
+            {/* <option value="high">Cao</option>
             <option value="medium">Trung bình</option>
-            <option value="low">Thấp</option>
+            <option value="low">Thấp</option> */}
           </select>
           <p className="mt-1 text-gray-600">Mức ưu tiên: {priorityContext.getLabel()}</p>
         </div>
 
         <div>
           <label className="block text-sm font-medium text-gray-700">Trạng Thái</label>
+          <input 
+              type="hidden" 
+              value={statusContext.getLabel()} 
+              {...register('status', { required: true })}
+            />
           <select onChange={handleStatusChange} className="w-full border p-2 rounded-md">
-            <option value="not_started">Needs Review</option>
+            {/* <option value="not_started">Needs Review</option>
             <option value="in_progress">In Progress</option>
-            <option value="completed">Completed</option>
+            <option value="completed">Completed</option> */}           
           </select>
           <p className="mt-1 text-gray-600">Trạng thái: {statusContext.getLabel()}</p>
         </div>
