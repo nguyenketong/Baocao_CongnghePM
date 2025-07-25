@@ -1,0 +1,32 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run start:dev
+    environment:
+      - MONGO_URI=${MONGO_URI}
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./admin-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./admin-frontend:/app
+      - /app/node_modules
+    command: npm run dev -- --port=3001
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
